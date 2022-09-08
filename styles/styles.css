@@ -93,7 +93,13 @@ header ul li a {
   font-size: 17px;
   font-family: Play;
   cursor: pointer;
+  transition: all 0.5s ease;
+}
 
+.cabecera__nav button:hover {
+  padding: 8px;
+  background-color: #0f0f0f;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
 }
 
 .amdIntel {
