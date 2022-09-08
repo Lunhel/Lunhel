@@ -6,6 +6,11 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family: "Play";
+  src: url("../fonts/Play/Play.ttf") format("truetype");
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(https://fondosmil.com/fondo/3041.jpg);
@@ -76,6 +81,19 @@ header ul {
 header ul li a {
   color: #ffff;
   text-decoration: none;
+}
+
+.cabecera__nav button {
+  border: none;
+  padding: 5px;
+  background-color: #302e2e;
+  color: #ffffff;
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(155, 154, 154);
+  font-size: 17px;
+  font-family: Play;
+  cursor: pointer;
+
 }
 
 .amdIntel {
