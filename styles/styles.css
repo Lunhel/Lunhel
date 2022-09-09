@@ -201,6 +201,12 @@ footer {
   border-radius: 40px;
   display: flex;
   flex-direction: column;
+  transition: all 0.5s;
+}
+
+.imagenProce__banner img:hover {
+  width: 920px;
+  height: 290px;
 }
 
 .pieDePagina__seguinos {
