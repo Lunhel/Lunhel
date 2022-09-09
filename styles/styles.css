@@ -169,6 +169,13 @@ footer {
   text-align: center;
   background-color: #292828;
   border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.parrafo__card:hover {
+  width: 370px;
+  height: 400px;
+  background: #000000;
 }
 
 .parrafo__card a{
