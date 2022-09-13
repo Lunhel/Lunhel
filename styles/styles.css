@@ -818,3 +818,6 @@ height: 50px;
 
 } */
 
+.carousel-control-next, .carousel-control-prev {
+  width: 25% !important;
+}
