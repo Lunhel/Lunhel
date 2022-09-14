@@ -859,3 +859,7 @@ height: 50px;
 .card-footer {
   background-color: rgb(215, 215, 216) !important;
 }
+
+body {
+  background-color: #ebebeb;
+}
