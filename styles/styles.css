@@ -848,6 +848,14 @@ height: 50px;
   font-size: 70px;
   font-family: "play";
   text-align: center;
-  padding-top: 50px;
+  padding-top: 0px;
   font-weight: bold;
+}
+
+.card-header {
+  background-color: rgb(215, 215, 216) !important;
+}
+
+.card-footer {
+  background-color: rgb(215, 215, 216) !important;
 }
