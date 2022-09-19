@@ -88,7 +88,6 @@ header ul li a {
   grid-area: amdIntel;
 }
 
-
 .parrafo {
   display: grid;
   grid-area: parrafo;
@@ -99,8 +98,7 @@ header ul li a {
 .imagenProce {
   display: grid;
   grid-area: imagenProce;
-  
-  }
+   }
 
 footer {
   grid-area: footer;
@@ -139,18 +137,22 @@ footer {
 }
 
 .parrafo__cajas {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   gap: 20px;
+  justify-content: center;
 }
 
 .parrafo__card {
-  width: 20%;
-  height: 370px;
   text-align: center;
   background-color: #292828;
   border-radius: 20px;
   transition: all 0.5s ease-out;
+  padding-bottom: 20px;
+  width: 350px;
+  height: 370px;
+
 }
 
 .parrafo__card:hover {
@@ -162,7 +164,7 @@ footer {
 .parrafo__card a{
   color: #ffffff;
   background-color: #000000;
-  border-radius: 123px;
+  border-radius: 23px;
   padding: 8px;
 }
 
@@ -617,7 +619,7 @@ footer {
   height: 50px;
 }
 
-@media screen and (min-width:320px) and (max-height:480px) and (orientation: portrait) {
+@media (max-width:480px) {
   .grilla {
     display: grid;
     grid-template-areas:
@@ -627,27 +629,31 @@ footer {
       "imagenProce"
       "amdIntel"
       "footer";
-      grid-template-columns: 1fr;
-      grid-template-rows: 130px 2fr auto auto auto;
   }
 
   header {
-    display: grid;
     grid-area: cabecera;
     background-color: #000000;
     display: flex;
-    justify-content: space-between;
     color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
   
+.cabecera__logo img {
+  height: 60px;
+  width: 60px;
+}
+
   header ul {
     list-style: none;
-    font-size: 21px;
-    border-radius: 10px;
+    border-radius: 13px;
     background-color: #1c1c1c;
-    padding: 10px;
     text-decoration: none;
-    width: 550px;
+    width: 100%;
+    padding: 4px;
+    gap: 20px
   }
   
   header ul li a {
@@ -655,40 +661,43 @@ footer {
     text-decoration: none;
   }
 
+  .cabecera__nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   .cabecera__ul {
     display: flex;
-    justify-content: center;
-  }
-
-  .parrafo__cajas {
-    display: grid;
+    justify-content: flex-start;
   }
 
 .parrafo__card {
-  width: 700px;
-  height: 750px;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.parrafo__cajas {
+gap: 40px;
+align-items: center;
 }
 
 .parrafo__card img {
-  height: 600px;
-  width: 600px;
+  width: 200px;
+  height: 200px; 
 }
 
 .parrafo__card a{
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .parrafo__card h4 { 
   height: 40px;
-  font-size: 35px;
+  font-size: 20px;
   line-height: 5px;
-}
-
-.parrafo__card p {
-  height: 40px;
-  font-size: 35px;
-  line-height: 23px;
 }
 
 .imagenProce__banner img {
@@ -696,19 +705,27 @@ footer {
   height: 200px;
 }
 
+.parrafo__card p {
+  height: 40px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.amdIntel {
+  gap: 20px;
+}
+
+
 .parrafo__destacados {
   font-size: 40px;
   text-align: center;
   margin: 60px;
 }
 
-.amdIntel {
-  gap: 20px;
-}
+
 
 }
 
-@media screen and (min-width:480px) and (max-height:320px) and (orientation: landscape) {
+/* @media screen and (min-width:480px) and (max-height:320px) and (orientation: landscape) {
   .grilla {
     display: grid;
     grid-template-areas:
@@ -720,12 +737,6 @@ footer {
       "footer";
       grid-template-columns: 1fr;
       grid-template-rows: 130px 2fr auto auto auto;
-  }
-
-  
-  
-  .parrafo__cajas {
-    display: grid;
   }
 
   header ul {
@@ -737,7 +748,7 @@ footer {
     height: 170px;
   }
 }
-
+ */
 @media screen and (min-width:320px) and (max-height:480px) and (orientation: portrait) {
   .grilla2 {
     display: grid;
