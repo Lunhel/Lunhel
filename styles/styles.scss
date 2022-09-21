@@ -1,101 +1,16 @@
 @import "./partials/header";
 @import "./partials/main";
+@import "./partials/tituloproce";
+@import "./partials/amdintel";
+@import "./partials/imagenproce";
+@import "./partials/piedepagina";
+
 
 
   
 
-  
-  
 
-  .imagenProce {
-    display: grid;
-    grid-area: imagenProce;
-     }
-  
-  footer {
-    grid-area: footer;
-  }
-  
-
-  
-  .tituloProce {
-    display: grid;
-    grid-area: tituloProce;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 50px;
-    padding: 20px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    background-color: #302e2e;
-  }
-
-  
-  .amdIntel {
-    display: grid;
-    grid-area: amdIntel;
-    text-align: center;
-    color: #ffffff;
-    align-items: center;
-    font-size: 20px;
-    margin: 20px;
-  }
-  
-  .imagenProce {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  
-  .imagenProce__banner img{
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-  }
-  
-  .imagenProce__banner img:hover {
-    width: 920px;
-    height: 290px;
-  }
-  
-  .pieDePagina__seguinos {
-    color: rgba(255, 255, 255, 0.829);
-    text-align: center;
-    font-size: 20px;
-    padding: 40px;
-  }
-  
-  .pieDePagina__redes {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .pieDePagina__copy {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-style: italic;
-    height: 50px;
-    margin-top: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .grilla2 {
+  /* .grilla2 {
     display: grid;
     grid-template-areas:
       "cabecera2 cabecera2"
@@ -104,10 +19,6 @@
       "footer footer";
       grid-template-columns: 1fr 4fr;
   }
-  
-  
-  
-  
   
   .cabecera2 {
     grid-area: cabecera2;
@@ -265,6 +176,11 @@
     font-style: italic;
   }
   
+
+
+
+
+
   .cabecera3 {
     text-align: end;
     background-size: auto;
@@ -336,6 +252,31 @@
     height: 50px;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .cabecera4 {
     text-align: end;
     background-size: auto;
@@ -420,6 +361,33 @@
     font-style: italic;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .cabecera5 {
     text-align: end;
     background-size: auto;
@@ -508,6 +476,31 @@
     height: 50px;
   }
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   @media (max-width:480px) {
     .grilla {
       display: grid;
@@ -612,4 +605,4 @@
     margin: 60px;
   }
   
-  }
+  } */
