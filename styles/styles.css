@@ -41,14 +41,14 @@ header ul {
   text-decoration: none;
 }
 header ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 header .cabecera__nav button {
   border: none;
   padding: 5px;
   background-color: #302e2e;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   border-bottom: 2px solid rgb(155, 154, 154);
   font-size: 17px;

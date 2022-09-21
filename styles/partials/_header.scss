@@ -28,7 +28,7 @@
   header {
     display: grid;
     grid-area: cabecera;
-    background-color: #000000;
+    background-color: $backgroundHeader;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,15 +45,15 @@
         padding: 5px;
         text-decoration: none;
         li a {
-             color: #ffff;
+             color: rgb(255, 255, 255);
              text-decoration: none;
         }
      } 
      .cabecera__nav button {
          border: none;
          padding: 5px;
-         background-color: #302e2e;
-         color: #ffffff;
+         background-color: #302e2e; 
+         color: $headerNavColor;
          border-radius: 10px;
          border-bottom: 2px solid rgb(155, 154, 154);
          font-size: 17px;
@@ -63,7 +63,7 @@
          &:hover {
              padding: 8px;
              background-color: #0f0f0f;
-             border-bottom: 2px solid rgba(255, 0, 0, 0.918);
+             border-bottom: 2px solid $hoverBotonNav
         }
     }
 }
