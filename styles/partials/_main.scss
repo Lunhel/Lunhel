@@ -1,0 +1,47 @@
+  .parrafo {
+    display: grid;
+    grid-area: parrafo;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    .parrafo__destacados {
+        font-size: 30px;
+        text-align: center;
+        margin: 60px;
+   }
+    .parrafo__cajas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 20px;
+    justify-content: center;
+   }
+     .parrafo__card {
+    text-align: center;
+    background-color: #292828;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+    padding-bottom: 20px;
+    width: 350px;
+    height: 370px;
+    &:hover { 
+        width: 370px;
+        height: 400px;
+        background: #4e4f50;
+    }
+    a {
+        color: #ffffff;
+        background-color: #000000;
+        border-radius: 23px;
+        padding: 8px;
+    }
+    h4 {
+         height: 35px;
+     } 
+        p {
+    height: 40px;
+    }
+     img {
+    height: 250px;
+   } 
+  }
+}
