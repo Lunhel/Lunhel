@@ -55,7 +55,7 @@
          background-color: #302e2e; 
          color: $headerNavColor;
          border-radius: 10px;
-         border-bottom: 2px solid rgb(155, 154, 154);
+         border-bottom: 2px solid $borderBotonNav;
          font-size: 17px;
          font-family: Play;
          cursor: pointer;
@@ -67,3 +67,4 @@
         }
     }
 }
+
