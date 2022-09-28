@@ -28,7 +28,7 @@
   header {
     display: grid;
     grid-area: cabecera;
-    background-color: $backgroundHeader;
+    background-color: map-get($colores, backgroundHeader);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +37,12 @@
         display: flex;
         justify-content: space-between;
         list-style: none;
-        width: 600px;
+        width: map-get($sizes, widthNavbar );
         margin-right: 30px;
         font-size: large;
-        border-radius: 10px;
+        border-radius: map-get($sizes, borderRadiusNavbar );
         background-color: #1c1c1c;
-        padding: 5px;
+        padding: map-get($sizes, paddingNavbar);
         text-decoration: none;
         li a {
              color: rgb(255, 255, 255);
@@ -53,9 +53,9 @@
          border: none;
          padding: 5px;
          background-color: #302e2e; 
-         color: $headerNavColor;
+         color: map-get($colores, headerNavColor);
          border-radius: 10px;
-         border-bottom: 2px solid $borderBotonNav;
+         border-bottom: 2px solid map-get($colores, borderBotonNav);
          font-size: 17px;
          font-family: Play;
          cursor: pointer;
@@ -63,7 +63,7 @@
          &:hover {
              padding: 8px;
              background-color: #0f0f0f;
-             border-bottom: 2px solid $hoverBotonNav
+             border-bottom: 2px solid map-get($colores, hoverBotonNav)
         }
     }
 }
