@@ -1,0 +1,11 @@
+@mixin info($backColor, $border, $colorText, $backHover) {
+        border-radius: 15px;
+        padding: 8px;
+        background-color: $backColor;
+        border-bottom: $border;
+        color: $colorText;
+        &:hover {
+            background-color: $backHover;
+        }
+}
+    
