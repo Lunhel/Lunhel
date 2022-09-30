@@ -1,3 +1,11 @@
+.parrafo .parrafo__cajas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  justify-content: center;
+}
+
 * {
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -73,16 +81,9 @@ header .cabecera__nav button:hover {
   text-align: center;
   margin: 60px;
 }
-.parrafo .parrafo__cajas {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  gap: 20px;
-  justify-content: center;
-}
 .parrafo .parrafo__card {
   text-align: center;
-  background-color: #292828;
+  background-color: #282829;
   border-radius: 20px;
   transition: all 0.5s ease-out;
   padding-bottom: 20px;
@@ -133,6 +134,8 @@ header .cabecera__nav button:hover {
 }
 
 .imagenProce {
+  display: grid;
+  grid-area: imagenProce;
   display: flex;
   flex-direction: column;
   align-items: center;
