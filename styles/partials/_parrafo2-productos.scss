@@ -1,0 +1,60 @@
+.parrafo2__productos {
+    display: grid;
+    grid-area: parrafo2;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    h1 {
+        font-size: 40px;
+        padding: 60px;
+        font-family: Play;
+        font-style: italic;
+      }
+      .parrafo2__cajas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: start;
+      }
+      .parrafo2__card {
+        width: 320px;
+        height: 320px;
+        text-align: center;
+        background-color: #292828;
+        border-radius: 25px;
+        color: rgb(255, 255, 255);
+        font-size: large;
+        transition: all 0.5s ease-out;
+        img {
+            width: 250px;
+            height: 250px;
+            padding: 9px;
+        }
+        &:hover {
+            width: 350px;
+            height: 350px;
+            background: #4e4f50;
+        }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+  
+ 

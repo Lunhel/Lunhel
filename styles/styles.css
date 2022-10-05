@@ -253,34 +253,28 @@ footer .pieDePagina__copy {
   border-bottom: 2px solid rgba(255, 0, 0, 0.918);
 }
 
-.parrafo2 {
+.parrafo2__productos {
   display: grid;
   grid-area: parrafo2;
-}
-
-.parrafo2__titulo {
-  font-size: 40px;
-  padding: 60px;
-  font-family: Play;
-  font-style: italic;
-}
-
-.parrafo2__productos {
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
-
-.parrafo2__cajas {
+.parrafo2__productos h1 {
+  font-size: 40px;
+  padding: 60px;
+  font-family: Play;
+  font-style: italic;
+}
+.parrafo2__productos .parrafo2__cajas {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: start;
 }
-
-.parrafo2__card {
+.parrafo2__productos .parrafo2__card {
   width: 320px;
   height: 320px;
   text-align: center;
@@ -290,39 +284,36 @@ footer .pieDePagina__copy {
   font-size: large;
   transition: all 0.5s ease-out;
 }
-
-.parrafo2__card:hover {
+.parrafo2__productos .parrafo2__card img {
+  width: 250px;
+  height: 250px;
+  padding: 9px;
+}
+.parrafo2__productos .parrafo2__card:hover {
   width: 350px;
   height: 350px;
   background: #4e4f50;
 }
 
-.parrafo2__card img {
-  width: 250px;
-  height: 250px;
-  padding: 9px;
-}
-
-.pieDePagina2 {
+footer {
   grid-area: footer;
-  padding: 100px;
 }
-
-.pieDePagina2__seguinos {
+footer .pieDePagina__seguinos {
   color: rgba(255, 255, 255, 0.829);
   text-align: center;
   font-size: 20px;
+  padding: 40px;
 }
-
-.pieDePagina2__redes {
+footer .pieDePagina__redes {
   text-align: center;
   padding: 20px;
 }
-
-.pieDePagina2__copy {
+footer .pieDePagina__copy {
   text-align: center;
   color: rgb(255, 255, 255);
   font-style: italic;
+  height: 50px;
+  margin-top: 20px;
 }
 
 .cabecera3 {
