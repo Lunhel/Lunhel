@@ -8,101 +8,10 @@
 @import "./partials/amdintel";
 @import "./partials/imagenproce";
 @import "./partials/piedepagina";
+@import "./partials/header-productos";
+@import "./partials/categorias-productos";
 
 
-  .grilla2 {
-    display: grid;
-    grid-template-areas:
-      "cabecera2 cabecera2"
-      "categorias parrafo2"
-      "categorias parrafo2"
-      "footer footer";
-      grid-template-columns: 1fr 4fr;
-  }
-  
-  .cabecera2 {
-    grid-area: cabecera2;
-  }
-  
-  .cabecera2__nav button {
-    border: none;
-    padding: 5px;
-    background-color: #302e2e;
-    color: #ffffff;
-    border-radius: 10px;
-    border-bottom: 2px solid rgb(155, 154, 154);
-    font-size: 17px;
-    font-family: Play;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-  
-  .cabecera2__nav button:hover {
-    padding: 8px;
-    background-color: #0f0f0f;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.918);
-  }
-  
-  .categorias {
-    padding: 50px;
-    display: flex;
-    justify-content: flex-start;
-    grid-area: categorias;
-    font-family: Play;
-    font-style: italic;
-    margin-top: 70px;
-  }
-  
-  .cat1__nav button {
-    border: none;
-    padding: 4px;
-    background-color: #302e2e;
-    color: #ffffff;
-    border-radius: 10px;
-    border-bottom: 2px solid rgb(155, 154, 154);
-    font-size: 17px;
-    font-family: Play;
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-  
-  .cat1__nav button:hover {
-    padding: 8px;
-    background-color: #0f0f0f;
-    border-bottom: 2px solid rgba(255, 0, 0, 0.918);
-  }
-  
-  .cat1 ul li {
-    list-style: none;
-    text-decoration: none;
-    color: #ffffff;
-    text-align: left;
-  } 
-  
-  .categorias h1 {
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 35px;
-  }
-  
-  .cat1__nav ul {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;  
-  }
-  
-  .cat1__nav ul li {
-    text-align: center;
-    padding: 5px;
-    background-color: #292828;
-    border-radius: 10px;
-  }
-  
-  .categorias a {
-   text-decoration: none;
-   padding: 10px;
-  }
   
   .parrafo2 {
     display: grid;

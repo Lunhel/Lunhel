@@ -24,3 +24,13 @@
       "amdIntel imagenProce"
       "footer footer";
   }
+
+  .grilla2 {
+    display: grid;
+    grid-template-areas:
+      "cabecera2 cabecera2"
+      "categorias parrafo2"
+      "categorias parrafo2"
+      "footer footer";
+      grid-template-columns: 1fr 4fr;
+  }

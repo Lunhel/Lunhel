@@ -23,7 +23,7 @@
         background: #4e4f50;
     }
     a {
-        @include info($backColor: rgb(0, 0, 0), $border: 02px solid rgb(122, 118, 118), $colorText: #ffffff, $backHover: rgb(61, 60, 60))
+        @include info($backColor: rgb(0, 0, 0), $border: 02px solid rgb(122, 118, 118), $colorText: #ffffff, $backHover: rgb(32, 32, 32))
     } 
     h4 {
          height: 35px;
