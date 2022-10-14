@@ -2,7 +2,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
   }
   
   @font-face {
@@ -12,25 +15,7 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://fondosmil.com/fondo/3041.jpg);
+    background-image: url(/images/aKhMhFy.png);
   }
   
-  .grilla {
-    display: grid;
-    grid-template-areas:
-      "cabecera cabecera"
-      "parrafo parrafo"
-      "tituloProce tituloProce"
-      "amdIntel imagenProce"
-      "footer footer";
-  }
-
-  .grilla2 {
-    display: grid;
-    grid-template-areas:
-      "cabecera2 cabecera2"
-      "categorias parrafo2"
-      "categorias parrafo2"
-      "footer footer";
-      grid-template-columns: 1fr 4fr;
-  }
+  

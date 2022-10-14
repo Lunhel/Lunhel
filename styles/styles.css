@@ -1,22 +1,36 @@
-.parrafo .parrafo__cajas {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  gap: 20px;
-  justify-content: center;
-}
+/* $colores: (
+    backgroundHeader: #000000,
+    headerNavColor: rgb(255, 255, 255),
+    hoverBotonNav:  rgba(197, 13, 13, 0.918),
+    borderBotonNav: rgb(154, 155, 154)
+);
 
-.parrafo .parrafo__destacados {
-  font-size: 30px;
-  text-align: center;
-  margin: 60px;
-}
+$sizes: (
+    widthNavbar: 600px,
+    borderRadiusNavbar: 10px,
+    paddingNavbar: 5px
+); */
+/* %cajas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    gap: 20px;
+    justify-content: center;
+   }
 
+%destacados {
+    font-size: 30px;
+    text-align: center;
+    margin: 60px;
+} */
 * {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -25,103 +39,146 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(https://fondosmil.com/fondo/3041.jpg);
+  background-image: url(/images/aKhMhFy.png);
 }
 
-.grilla {
-  display: grid;
-  grid-template-areas: "cabecera cabecera" "parrafo parrafo" "tituloProce tituloProce" "amdIntel imagenProce" "footer footer";
+/* @mixin info($backColor, $border, $colorText, $backHover) {
+        border-radius: 15px;
+        padding: 8px;
+        background-color: $backColor;
+        border-bottom: $border;
+        color: $colorText;
+        &:hover {
+            background-color: $backHover;
+        }
 }
-
-.grilla2 {
-  display: grid;
-  grid-template-areas: "cabecera2 cabecera2" "categorias parrafo2" "categorias parrafo2" "footer footer";
-  grid-template-columns: 1fr 4fr;
-}
-
-header {
-  display: grid;
-  grid-area: cabecera;
-  background-color: #000000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #ffffff;
-}
-header ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 600px;
-  margin-right: 30px;
-  font-size: large;
-  border-radius: 10px;
-  background-color: #1c1c1c;
-  padding: 5px;
-  text-decoration: none;
-}
-header ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-header .cabecera__nav button {
-  border: none;
-  padding: 5px;
-  background-color: #302e2e;
-  color: rgb(255, 255, 255);
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(154, 155, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-header .cabecera__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(197, 13, 13, 0.918);
-}
-
-.parrafo {
-  display: grid;
-  grid-area: parrafo;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-}
-.parrafo .parrafo__card {
-  text-align: center;
-  background-color: #282829;
-  border-radius: 20px;
-  transition: all 0.5s ease-out;
-  padding-bottom: 20px;
-  width: 400px;
-  height: 370px;
-}
-.parrafo .parrafo__card:hover {
-  width: 370px;
-  height: 400px;
-  background: #4e4f50;
-}
-.parrafo .parrafo__card a {
-  border-radius: 15px;
-  padding: 8px;
+     */
+.header {
   background-color: rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(122, 118, 118);
-  color: #ffffff;
 }
-.parrafo .parrafo__card a:hover {
-  background-color: rgb(32, 32, 32);
+.header .container {
+  max-width: 1440px;
+  padding: 10px 0;
 }
-.parrafo .parrafo__card h4 {
-  height: 35px;
-}
-.parrafo .parrafo__card p {
-  height: 40px;
-}
-.parrafo .parrafo__card img {
-  height: 250px;
+.header .container img {
+  width: 50px;
+  height: 50px;
 }
 
+@media (max-width: 480px) {
+  .container {
+    margin: 0 12%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .container .nav {
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    border-radius: 5px;
+  }
+  .container .nav .nav__list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    list-style: none;
+  }
+  .container .nav .nav__list li {
+    width: 200px;
+    margin: auto;
+    background-color: rgb(56, 55, 55);
+    padding: 0.3em;
+    border-radius: 5px;
+    border-bottom: 2.5px solid grey;
+  }
+  .container .nav .nav__list a {
+    color: rgb(255, 255, 255);
+  }
+}
+/* header {
+    display: grid;
+    grid-area: cabecera;
+    background-color: map-get($colores, backgroundHeader);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        width: map-get($sizes, widthNavbar );
+        margin-right: 30px;
+        font-size: large;
+        border-radius: map-get($sizes, borderRadiusNavbar );
+        background-color: #1c1c1c;
+        padding: map-get($sizes, paddingNavbar);
+        text-decoration: none;
+        li a {
+             color: rgb(255, 255, 255);
+             text-decoration: none;
+        }
+     } 
+     .cabecera__nav button {
+         border: none;
+         padding: 5px;
+         background-color: #302e2e; 
+         color: map-get($colores, headerNavColor);
+         border-radius: 10px;
+         border-bottom: 2px solid map-get($colores, borderBotonNav);
+         font-size: 17px;
+         font-family: Play;
+         cursor: pointer;
+         transition: all 0.5s ease;
+         &:hover {
+             padding: 8px;
+             background-color: #0f0f0f;
+             border-bottom: 2px solid map-get($colores, hoverBotonNav)
+        }
+    }
+} */
+/*   .parrafo {
+    display: grid;
+    grid-area: parrafo;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    .parrafo__destacados {
+       @extend %destacados;
+   }
+    .parrafo__cajas {
+      @extend %cajas;
+}
+     .parrafo__card {
+    text-align: center;
+    background-color: #282829;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+    padding-bottom: 20px;
+    width: 400px;
+    height: 370px;
+    &:hover { 
+        width: 370px;
+        height: 400px;
+        background: #4e4f50;
+    }
+    a {
+        @include info($backColor: rgb(0, 0, 0), $border: 02px solid rgb(122, 118, 118), $colorText: #ffffff, $backHover: rgb(32, 32, 32))
+    } 
+    h4 {
+         height: 35px;
+     } 
+        p {
+    height: 40px;
+    }
+     img {
+    height: 250px;
+   } 
+  }
+} */
 .tituloProce {
   display: grid;
   grid-area: tituloProce;
@@ -181,27 +238,6 @@ footer .pieDePagina__copy {
   font-style: italic;
   height: 50px;
   margin-top: 20px;
-}
-
-.cabecera2 {
-  grid-area: cabecera2;
-}
-.cabecera2 .cabecera2__nav button {
-  border: none;
-  padding: 5px;
-  background-color: #302e2e;
-  color: #ffffff;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(155, 154, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.cabecera2 .cabecera2__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
 }
 
 .categorias {
@@ -316,24 +352,6 @@ footer .pieDePagina2__copy {
   margin-top: 20px;
 }
 
-.cabecera3__nav button {
-  border: none;
-  padding: 5px;
-  background-color: #302e2e;
-  color: #ffffff;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(155, 154, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.cabecera3__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
-}
-
 .parrafo3 {
   color: #ffffff;
   text-align: center;
@@ -367,24 +385,6 @@ footer .pieDePagina3__copy {
   font-style: italic;
   height: 50px;
   margin-top: 20px;
-}
-
-.cabecera5__nav button {
-  border: none;
-  padding: 5px;
-  background-color: #302e2e;
-  color: #ffffff;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(155, 154, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.cabecera5__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
 }
 
 .parrafo5 {
@@ -431,24 +431,6 @@ footer .pieDePagina5__copy {
   font-style: italic;
   height: 50px;
   margin-top: 20px;
-}
-
-.cabecera4__nav button {
-  border: none;
-  padding: 5px;
-  background-color: #302e2e;
-  color: #ffffff;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(155, 154, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.cabecera4__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
 }
 
 .parrafo4 h2 {
