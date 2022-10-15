@@ -57,12 +57,36 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .header .container {
-  max-width: 1440px;
-  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header .container img {
-  width: 50px;
-  height: 50px;
+.header .container h1 {
+  text-align: center;
+}
+.header .container .nav {
+  background-color: rgb(29, 28, 28);
+  width: auto;
+  border-radius: 5px;
+  display: flex;
+}
+.header .container .nav .nav__list {
+  text-align: center;
+  display: flex;
+  padding: 0.5em;
+  gap: 1em;
+  list-style: none;
+}
+.header .container .nav .nav__list li {
+  width: 150px;
+  margin: auto;
+  background-color: rgb(56, 55, 55);
+  padding: 0.3em;
+  border-radius: 5px;
+  border-bottom: 2.5px solid grey;
+}
+.header .container .nav .nav__list a {
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 480px) {
@@ -140,44 +164,6 @@ body {
              border-bottom: 2px solid map-get($colores, hoverBotonNav)
         }
     }
-} */
-/*   .parrafo {
-    display: grid;
-    grid-area: parrafo;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    .parrafo__destacados {
-       @extend %destacados;
-   }
-    .parrafo__cajas {
-      @extend %cajas;
-}
-     .parrafo__card {
-    text-align: center;
-    background-color: #282829;
-    border-radius: 20px;
-    transition: all 0.5s ease-out;
-    padding-bottom: 20px;
-    width: 400px;
-    height: 370px;
-    &:hover { 
-        width: 370px;
-        height: 400px;
-        background: #4e4f50;
-    }
-    a {
-        @include info($backColor: rgb(0, 0, 0), $border: 02px solid rgb(122, 118, 118), $colorText: #ffffff, $backHover: rgb(32, 32, 32))
-    } 
-    h4 {
-         height: 35px;
-     } 
-        p {
-    height: 40px;
-    }
-     img {
-    height: 250px;
-   } 
-  }
 } */
 .tituloProce {
   display: grid;
