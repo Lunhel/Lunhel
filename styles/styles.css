@@ -211,7 +211,7 @@ body {
 @media (max-width: 480px) {
   .main .container {
     margin: 0% 12%;
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .main .container h2 {
     color: rgb(255, 255, 255);
@@ -251,5 +251,65 @@ body {
     padding: 0.5em 1em;
     border-radius: 10px;
     border-bottom: 2.5px solid rgb(255, 255, 255);
+  }
+}
+
+.home__team {
+  padding: 100px 0;
+}
+.home__team h2 {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 2.3em;
+}
+.home__team .container {
+  margin: 0 12%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.home__team .container .marca {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.home__team .container .marca p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.2em;
+}
+.home__team .container .marca img {
+  border-radius: 15px;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .home__team h2 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 2.3em;
+  }
+  .home__team .container {
+    margin: 0 12%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .home__team .container .marca {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .home__team .container .marca p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .home__team .container .marca img {
+    border-radius: 15px;
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
