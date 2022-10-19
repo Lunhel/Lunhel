@@ -1,5 +1,5 @@
 .header {
- background-color: rgb(0, 0, 0);
+ background-color: map-get($colores, backgroundHeader);
  .container {
     display: flex;
     justify-content: space-between;
@@ -8,6 +8,7 @@
         text-align: center;
     }
     .nav {
+        margin-right: 30px;
         background-color: rgb(29, 28, 28);
         width: auto;
         border-radius: 5px;
@@ -19,16 +20,22 @@
             gap: 1em;
             list-style: none;
             li {
-                width: 150px;
+                width: map-get($sizes, widthNavbar);
                 margin: auto;
                 background-color: rgb(56, 55, 55);
-                padding: 0.3em;
-                border-radius: 5px;
-                border-bottom: 2.5px solid grey;
-
+                padding: map-get($sizes, paddingNavbar);
+                border-radius: map-get($sizes, borderRadiusNavbar);
+                border-bottom: 2.5px solid map-get($colores, borderBotonNav);
+                cursor: pointer;
+                transition: all 0.5s ease;
+                &:hover {
+                    padding: 8px;
+                    background-color: #0f0f0f;
+                    border-bottom: 2px solid map-get($colores, hoverBorderNav)
+               }
             }
             a {
-                color: rgb(255, 255, 255);
+                color: map-get($colores, headerNavColor);
             }
         }
     }
