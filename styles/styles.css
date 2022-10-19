@@ -99,9 +99,10 @@ body {
     text-align: center;
   }
   .container .nav {
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     border-radius: 5px;
+    margin-bottom: 20px;
   }
   .container .nav .nav__list {
     text-align: center;
@@ -117,7 +118,6 @@ body {
     background-color: rgb(56, 55, 55);
     padding: 0.3em;
     border-radius: 5px;
-    border-bottom: 2.5px solid grey;
   }
   .container .nav .nav__list a {
     color: rgb(255, 255, 255);
@@ -165,304 +165,91 @@ body {
         }
     }
 } */
-.tituloProce {
-  display: grid;
-  grid-area: tituloProce;
+.main .container {
+  margin: 0% 12%;
+  padding: 100px 0;
+}
+.main .container h2 {
   color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 50px;
-  padding: 20px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  background-color: #302e2e;
-}
-
-.amdIntel {
-  display: grid;
-  grid-area: amdIntel;
-  text-align: center;
-  color: #ffffff;
-  align-items: center;
-  font-size: 20px;
-  margin: 20px;
-}
-
-.imagenProce {
-  display: grid;
-  grid-area: imagenProce;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.imagenProce img {
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.5s;
-}
-.imagenProce img:hover {
-  width: 920px;
-  height: 290px;
-}
-
-footer {
-  grid-area: footer;
-}
-footer .pieDePagina__seguinos {
-  color: rgba(255, 255, 255, 0.829);
-  text-align: center;
-  font-size: 20px;
-  padding: 40px;
-}
-footer .pieDePagina__redes {
-  text-align: center;
-  padding: 20px;
-}
-footer .pieDePagina__copy {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  height: 50px;
-  margin-top: 20px;
-}
-
-.categorias {
-  padding: 50px;
-  display: flex;
-  justify-content: flex-start;
-  grid-area: categorias;
-  font-family: Play;
-  font-style: italic;
-  margin-top: 70px;
-}
-.categorias a {
-  text-decoration: none;
-  padding: 10px;
-}
-.categorias .cat1__titulo {
-  text-align: center;
-  color: #ffffff;
+  font-size: 33px;
   text-transform: uppercase;
-  padding: 35px;
-}
-.categorias .cat1__nav ul {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-}
-.categorias .cat1__nav ul li {
   text-align: center;
-  padding: 5px;
-  background-color: #292828;
-  border-radius: 10px;
-  list-style: none;
+  margin-top: 5px;
 }
-.categorias .cat1__nav button {
-  border: none;
-  padding: 4px;
-  background-color: #302e2e;
-  color: #ffffff;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(155, 154, 154);
-  font-size: 17px;
-  font-family: Play;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.categorias .cat1__nav button:hover {
-  padding: 8px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.918);
-}
-
-.parrafo2__productos {
-  display: grid;
-  grid-area: parrafo2;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-.parrafo2__productos h1 {
-  font-size: 40px;
-  padding: 60px;
-  font-family: Play;
-  font-style: italic;
-}
-.parrafo2__productos .parrafo2__cajas {
-  width: 100%;
+.main .container .card__container {
+  padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
-  justify-content: start;
+  justify-content: space-around;
+  gap: 25px;
 }
-.parrafo2__productos .parrafo2__card {
-  width: 320px;
-  height: 320px;
-  text-align: center;
-  background-color: #292828;
-  border-radius: 25px;
-  color: rgb(255, 255, 255);
-  font-size: large;
-  transition: all 0.5s ease-out;
-}
-.parrafo2__productos .parrafo2__card img {
-  width: 250px;
-  height: 250px;
-  padding: 9px;
-}
-.parrafo2__productos .parrafo2__card:hover {
-  width: 350px;
-  height: 350px;
-  background: #4e4f50;
-}
-
-footer {
-  grid-area: footer;
-}
-footer .pieDePagina2__seguinos {
-  color: rgba(255, 255, 255, 0.829);
-  text-align: center;
-  font-size: 20px;
-  padding: 40px;
-}
-footer .pieDePagina2__redes {
-  text-align: center;
-  padding: 20px;
-}
-footer .pieDePagina2__copy {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  height: 50px;
-  margin-top: 20px;
-}
-
-.parrafo3 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-  padding: 12px;
-}
-.parrafo3 h3 {
-  font-size: 20px;
-  text-decoration: underline;
-  text-align: center;
-  margin: 35px;
-  background-color: #000000;
-  display: inline-block;
-  padding: 4px;
+.main .container .card__container .card {
+  width: 300px;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 1em;
   border-radius: 15px;
 }
-
-footer .pieDePagina3__seguinos {
-  color: rgba(255, 255, 255, 0.829);
+.main .container .card__container .card img {
+  width: 100%;
+}
+.main .container .card__container .card p {
+  color: white;
+  font-size: 1.5em;
   text-align: center;
-  font-size: 20px;
-  padding: 40px;
 }
-footer .pieDePagina3__redes {
-  text-align: center;
-  padding: 20px;
+.main .container .card__container .card a {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border-bottom: 2.5px solid rgb(255, 255, 255);
 }
-footer .pieDePagina3__copy {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  height: 50px;
-  margin-top: 20px;
-}
-
-.parrafo5 {
-  color: #ffffff;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-.parrafo5 .parrafo5__1 {
-  margin: 20px;
-}
-.parrafo5 .parrafo5__2 {
-  margin: 20px;
-}
-.parrafo5 .parrafo5__3 {
-  margin: 20px;
-}
-
-.pieDePagina5__mapa {
-  width: 50%;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-
-footer .pieDePagina5__seguinos {
-  color: rgba(255, 255, 255, 0.829);
-  text-align: center;
-  font-size: 20px;
-  padding: 40px;
-}
-footer .pieDePagina5__redes {
-  text-align: center;
-  padding: 20px;
-}
-footer .pieDePagina5__copy {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  height: 50px;
-  margin-top: 20px;
-}
-
-.parrafo4 h2 {
-  color: #ffffff;
-  margin-top: 40px;
-  text-align: center;
-  font-size: 30px;
-  padding: 23px;
-}
-.parrafo4 .parrafo4__parrafo1 {
-  color: #ffffff;
-  margin-top: 80px;
-  text-align: start;
-  font-size: 20px;
-  padding: 12px;
-}
-.parrafo4 .parrafo4__parrafo2 {
-  color: #ffffff;
-  margin-top: 30px;
-  text-align: end;
-  font-size: 20px;
-  padding: 12px;
-}
-.parrafo4 .parrafo4__parrafo3 {
-  color: #ffffff;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
-  padding: 12px;
-}
-
-footer .pieDePagina4__seguinos {
-  color: rgba(255, 255, 255, 0.829);
-  text-align: center;
-  font-size: 20px;
-  padding: 30px;
-  margin-top: 120px;
-}
-footer .pieDePagina4__redes {
-  text-align: center;
-  padding: 20px;
-}
-footer .pieDePagina4__copy {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-style: italic;
-  height: 50px;
-  margin-top: 70px;
+@media (max-width: 480px) {
+  .main .container {
+    margin: 0% 12%;
+    padding: 100px 0;
+  }
+  .main .container h2 {
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .main .container .card__container {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+  }
+  .main .container .card__container .card {
+    width: 300px;
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+    border-radius: 15px;
+  }
+  .main .container .card__container .card img {
+    width: 100%;
+  }
+  .main .container .card__container .card p {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .main .container .card__container .card a {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border-bottom: 2.5px solid rgb(255, 255, 255);
+  }
 }/*# sourceMappingURL=styles.css.map */

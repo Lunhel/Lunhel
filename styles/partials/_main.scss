@@ -1,0 +1,48 @@
+.main {
+    .container {
+        margin: 0% 12%;
+        padding: 100px 0;
+        h2 {
+            color: rgb(255, 255, 255);
+            font-size: 33px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .card__container {
+            padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 25px;
+            .card {
+                @include card;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .container {
+            margin: 0% 12%;
+            padding: 100px 0;
+            h2 {
+                color: rgb(255, 255, 255);
+                font-size: 33px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 5px;
+            }
+            .card__container {
+                padding: 50px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 25px;
+                .card {
+                    @include card;
+                }
+            }
+        }
+    }
+}
+
+
