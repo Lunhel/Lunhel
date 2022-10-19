@@ -184,7 +184,7 @@ body {
   gap: 25px;
 }
 .main .container .card__container .card {
-  width: 300px;
+  width: 20em;
   background-color: rgb(40, 40, 40);
   display: flex;
   flex-direction: column;
@@ -192,6 +192,11 @@ body {
   padding: 2em;
   gap: 1em;
   border-radius: 15px;
+  transition: all 0.7s ease-out;
+}
+.main .container .card__container .card:hover {
+  width: 21em;
+  gap: 1.5em;
 }
 .main .container .card__container .card img {
   width: 100%;
@@ -228,7 +233,7 @@ body {
     gap: 25px;
   }
   .main .container .card__container .card {
-    width: 300px;
+    width: 20em;
     background-color: rgb(40, 40, 40);
     display: flex;
     flex-direction: column;
@@ -236,6 +241,11 @@ body {
     padding: 2em;
     gap: 1em;
     border-radius: 15px;
+    transition: all 0.7s ease-out;
+  }
+  .main .container .card__container .card:hover {
+    width: 21em;
+    gap: 1.5em;
   }
   .main .container .card__container .card img {
     width: 100%;
