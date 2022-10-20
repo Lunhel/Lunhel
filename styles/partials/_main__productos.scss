@@ -1,0 +1,72 @@
+.main__productos {
+    margin: 0% 2%;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas:
+      "main__navCategorias main__cardContainer";
+      grid-template-columns: 1fr 4fr;
+    .main__container {
+        h1 {
+            width: 270px;
+            margin: 15px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-align: start;
+            text-transform: uppercase;
+            font-size: 2em;
+            padding: 20px;
+        }
+        .main__navCategorias  {
+            grid-area: main__navCategorias;
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            li {
+                width: 270px;
+                margin: 15px;
+                text-align: center;
+                padding: 8px;
+                background-color: rgb(29, 28, 28);
+                border-radius: 10px;
+                list-style: none;
+                button  {
+                    border: none;
+                    padding: 4px;
+                    background-color: #302e2e;
+                    color: #ffffff;
+                    border-radius: 10px;
+                    border-bottom: 2px solid rgb(155, 154, 154);
+                    font-size: 15px;
+                    font-family: Play;
+                    cursor: pointer;
+                    transition: all 0.7s ease;
+                    &:hover {
+                        padding: 6px;
+                        background-color: #0f0f0f;
+                        border-bottom: 2px solid map-get($colores, hoverBorderNav)
+                    }
+                }
+            }
+        }
+    }
+    .card__section {
+        .h2 {
+            color: #ffffff;
+    }
+}
+    .main__cardContainer {
+        grid-area: main__cardContainer;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 25px;
+        .card {
+            @include card;
+        }
+    }
+}
+
