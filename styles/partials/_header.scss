@@ -1,81 +1,83 @@
 .header {
- background-color: map-get($colores, backgroundHeader);
- .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h1 {
+    background-color: map-get($colores, backgroundHeader);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
         text-align: center;
-    }
-    .nav {
-        margin-right: 30px;
+      }
+      .nav {
         background-color: rgb(29, 28, 28);
         width: auto;
         border-radius: 5px;
         display: flex;
         .nav__list {
-            text-align: center;
+          text-align: center;
+          display: flex;
+          padding: 0.5em;
+          gap: 1em;
+          list-style: none;
+          li {
+            width: map-get($sizes, widthNavbar);
+            margin: auto;
+            background-color: rgb(56, 55, 55);
+            border-radius: map-get($sizes, borderRadiusNavbar);
+            border-bottom: 2.5px solid map-get($colores, borderBotonNav);
+  
+            transition: all 0.5s ease;
+            &:hover {
+              background-color: #0f0f0f;
+              border-bottom: 2px solid map-get($colores, hoverBorderNav);
+            }
+          }
+          a {
             display: flex;
-            padding: 0.5em;
-            gap: 1em;
-            list-style: none;
-            li {
-                width: map-get($sizes, widthNavbar);
-                margin: auto;
-                background-color: rgb(56, 55, 55);
-                padding: map-get($sizes, paddingNavbar);
-                border-radius: map-get($sizes, borderRadiusNavbar);
-                border-bottom: 2.5px solid map-get($colores, borderBotonNav);
-                cursor: pointer;
-                transition: all 0.5s ease;
-                &:hover {
-                    padding: 8px;
-                    background-color: #0f0f0f;
-                    border-bottom: 2px solid map-get($colores, hoverBorderNav)
-               }
-            }
-            a {
-                color: map-get($colores, headerNavColor);
-            }
+            height: 25px;
+            align-items: center;
+            justify-content: center;
+            color: map-get($colores, headerNavColor);
+          }
         }
+      }
     }
-}
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .container {
-        margin: 0 12%;
-        display: flex;
-        flex-direction: column;
-        h1 {
-            text-align: center;
-        }
-        .nav {
-            background-color: rgb(0, 0, 0);
-            width: 100%;
+      margin: 0 12%;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        text-align: center;
+      }
+      .nav {
+        margin: auto;
+        background-color: rgb(172, 22, 22);
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        .nav__list {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          padding: 1em;
+          gap: 1em;
+          list-style: none;
+          li {
+            width: 200px;
+            margin: auto;
+            background-color: rgb(56, 55, 55);
+            padding: 0.3em;
             border-radius: 5px;
-            margin-bottom: 20px;
-            .nav__list {
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                padding: 1em;
-                gap: 1em;
-                list-style: none;
-                li {
-                    width: 200px;
-                    margin: auto;
-                    background-color: rgb(56, 55, 55);
-                    padding: 0.3em;
-                    border-radius: 5px;
-                }
-                a {
-                    color: rgb(255, 255, 255);
-                }
-            }
+          }
+          a {
+            color: rgb(255, 255, 255);
+          }
         }
+      }
     }
-}
+  }
 
 
 
