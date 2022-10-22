@@ -270,6 +270,49 @@ body {
   }
 }
 
+.home__team h2 {
+  font-size: 2.3em;
+  color: white;
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  padding: 25px 0;
+}
+.home__team .container {
+  margin: 0 12%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 480px) {
+  h2 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 2.3em;
+  }
+  .container {
+    margin: 0 12%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container .marca {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .container .marca p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .container .marca img {
+    border-radius: 15px;
+    width: 100%;
+  }
+}
 .main__productos {
   margin: 0% 2%;
   padding: 100px 0;
@@ -379,49 +422,65 @@ body {
   }
 }
 
-.home__team h2 {
-  font-size: 2.3em;
-  color: white;
-  text-align: center;
-  background-color: rgb(40, 40, 40);
-  padding: 25px 0;
+.main__pagos .container {
+  margin: 0% 12%;
+  padding: 70px 0;
 }
-.home__team .container {
-  margin: 0 12%;
-  padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+.main__pagos .container h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding: 50px;
+}
+.main__pagos .container h2 {
+  font-style: italic;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 50px;
+}
+.main__pagos .container p {
+  align-items: center;
+  padding: 2em;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  width: auto;
+  color: rgb(2, 2, 2);
+  background-color: rgb(156, 156, 156);
+  text-align: center;
+  font-size: 1.5em;
 }
 @media (max-width: 480px) {
-  h2 {
-    text-align: center;
-    padding: 30px;
+  .main__pagos .container {
+    margin: 0% 12%;
+    padding: 70px 0;
+  }
+  .main__pagos .container h1 {
     color: white;
-    font-size: 2.3em;
+    font-size: 40px;
+    text-transform: uppercase;
   }
-  .container {
-    margin: 0 12%;
-    padding: 50px 0;
+  .main__pagos .container h2 {
+    font-style: italic;
+    padding: 5px;
+    font-size: 2em;
+  }
+  .main__pagos .container p {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-  }
-  .container .marca {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .container .marca p {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 1.2em;
-  }
-  .container .marca img {
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
     border-radius: 15px;
-    width: 100%;
+    width: auto;
+    color: rgb(2, 2, 2);
+    background-color: rgb(156, 156, 156);
+    text-align: center;
+    font-size: 1.4em;
   }
 }
+
 .footer {
   background-color: rgb(0, 0, 0);
 }
