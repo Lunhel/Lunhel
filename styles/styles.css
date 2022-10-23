@@ -481,6 +481,201 @@ body {
   }
 }
 
+.main__contacto {
+  margin: 0% 12%;
+  padding: 70px 0;
+}
+.main__contacto .container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.main__contacto .container .datosPersonales {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.main__contacto .container .datosPersonales h2 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding: 20px;
+}
+.main__contacto .container .datosPersonales h3 {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-size: 1.5em;
+}
+.main__contacto .container .datosPersonales #nombre {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+}
+.main__contacto .container .datosPersonales #apellido {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+}
+.main__contacto .container .datosPersonales #documento {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+}
+.main__contacto .container .otrosDatos {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.main__contacto .container .otrosDatos h2 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding: 20px;
+}
+.main__contacto .container .otrosDatos h3 {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-size: 1.5em;
+}
+.main__contacto .container .otrosDatos h4 {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 10px;
+}
+.main__contacto .container .otrosDatos .select {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.main__contacto .container .otrosDatos #email {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 10px;
+}
+.main__contacto .container .enviar h3 {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-size: 1.5em;
+}
+.main__contacto .container .enviar .botones {
+  padding: 10px;
+}
+.main__contacto .container .enviar .botones input {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border-bottom: 2.5px solid rgb(133, 133, 133);
+  transition: all 0.5s ease;
+}
+.main__contacto .container .enviar .botones input:hover {
+  color: rgb(255, 255, 255);
+  background-color: #0f0f0f;
+  border-bottom: 2px solid rgba(214, 214, 214, 0.918);
+}
+@media (max-width: 480px) {
+  .main__contacto {
+    margin: 0% 2%;
+    padding: 20px 0;
+  }
+  .main__contacto .container {
+    text-align: center;
+  }
+  .main__contacto .container .datosPersonales {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main__contacto .container .datosPersonales h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+  .main__contacto .container .datosPersonales h3 {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .main__contacto .container .datosPersonales #nombre {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+  }
+  .main__contacto .container .datosPersonales #apellido {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+  }
+  .main__contacto .container .datosPersonales #documento {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+  }
+  .main__contacto .container .otrosDatos {
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .main__contacto .container .otrosDatos h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+  .main__contacto .container .otrosDatos h3 {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .main__contacto .container .otrosDatos h4 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 10px;
+  }
+  .main__contacto .container .otrosDatos .select {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .main__contacto .container .otrosDatos #email {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px;
+  }
+  .main__contacto .container .enviar h3 {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .main__contacto .container .enviar .botones {
+    padding: 20px;
+  }
+  .main__contacto .container .enviar .botones input {
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  .main__contacto .container .mapa {
+    align-items: center;
+  }
+}
+
 .main__nosotros .main__container {
   margin: 0% 10%;
   padding: 70px 0;

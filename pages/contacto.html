@@ -44,96 +44,120 @@
      </nav>
     </div>
   </header>
-    <main>
-        <br>
-        <form class="parrafo5">
-            <fieldset class="parrafo5__1">
+    <main class="main__contacto">
+      <div class="container">
+        <form>
+          <div class="datosPersonales">
+              <h2>
                 <legend>Datos personales:</legend>
+              </h2>
+              <h3>
                 <label for="nombre">Ingresa tu nombre</label>
-                <br>
-                <input id="nombre" type="text" placeholder="Nombre">
-                <br>
+              </h3>
+              <input id="nombre" type="text" placeholder="Nombre">
+              <h3>
                 <label for="apellido">Ingresa tu apellido</label>
-                <br>
-                <input id="apellido" type="text" placeholder="Apellido">
-                <br>
+              </h3>
+              <input id="apellido" type="text" placeholder="Apellido">
+              <h3>
                 <label for="documento">Ingresa tu DNI</label>
-                <br>
-                <input id="documento" type="number" placeholder="DNI">
-                <br>
-            </fieldset>
-            <fieldset class="parrafo5__2">
+              </h3>
+              <input id="documento" type="number" placeholder="DNI">
+          </div>
+          <div class="otrosDatos">
+              <h2>
                 <legend>Otros datos:</legend>
+              </h2>
+              <h3>
                 <label for="email">Ingresa tu email</label>
-                <br>
-            <input id="email" type="email" placeholder="Email">
-            <br>
-            <br>
+              </h3>
+          <input id="email" type="email" placeholder="Email">
+          <h3>
             <label for="pais">Selecciona tu pais</label>
-            <br>
-            <select>
-                <option>Argentina</option>
-                <option>Brasil</option>
-                <option>Uruguay</option>
-                <option>Bolivia</option>
-                <option>Peru</option>
-                <option>Venezuela</option>
-                <option>Chile</option>
-                <option>Colombia</option>
-                <option>Ecuador</option>
-                <option>Puerto Rico</option>
-                <option>Panama</option>
-                <option>Republica Dominicana</option>
-                <option>Mexico</option>
-                <option>España</option>
-                <option>Otros</option>
-            </select>
-            <br>
-            <br>
-            <label>Acepto los terminos y condiciones</label>
+          </h3>
+          <select class="select">
+              <option>Argentina</option>
+              <option>Brasil</option>
+              <option>Uruguay</option>
+              <option>Bolivia</option>
+              <option>Peru</option>
+              <option>Venezuela</option>
+              <option>Chile</option>
+              <option>Colombia</option>
+              <option>Ecuador</option>
+              <option>Puerto Rico</option>
+              <option>Panama</option>
+              <option>Republica Dominicana</option>
+              <option>Mexico</option>
+              <option>España</option>
+              <option>Otros</option>
+          </select>
+          <hr>
+          <h4>
+            <label>Acepto terminos y condiciones</label>
             <input type="checkbox">
-            <br>
-            <label>Deseo recibir información por mail</label>
+          </h4>
+          <h4>
+            <label>Quiero información por mail</label>
             <input type="checkbox">
-            <br>
-            <br>
-            <label for="">¿Que team te consideras?</label>
-            <br>
-            <label for="">Amd</label>
+          </h4>
+          <hr>
+          <h2>
+            <label for="">¿Que team sos?</label>
+          </h2>
+          <h3>
+            <label for="">AMD</label>
             <input name="radio" type="radio">
-            <label for="">Intel</label>
+            <label for="">INTEL</label>
             <input name="radio" type="radio">
-            <label for="">Ambos</label>
-            <input name="radio" type="radio">
-            <br>
-            <br>
+          </h3>
+          <h3>
             <label for="comentarios">Ingresa tus comentarios</label>
-            <br>
-            <textarea></textarea>
-            <br>
-            </fieldset>
-            <fieldset class="parrafo5__3">
+          </h3>
+          <textarea></textarea>
+          </div>
+          <div class="enviar">
+              <h3>
                 <legend>Enviar info</legend>
+              </h3>
+              <div class="botones">
                 <input type="submit" value="Aceptar">
                 <input type="reset" value="Restablecer">
-            </fieldset>
+              </div>
+          </div>
         </form>
+      </div>
     </main>
-    <div class="pieDePagina5__mapa"> 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.3970445774!2d-58.57338110446176!3d-34.615461128522405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1660327756708!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
-    </div>
-    <footer class="pieDePagina5">
-        <br>
-          <p class="pieDePagina5__seguinos" >Seguinos en las redes!</p>
-          <div class="pieDePagina5__redes">
-            <a href="https://twitter.com/" target="_blank"><img src="../images/gorjeo.png" alt="twitter" width="30" height="30"></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="../images/facebook.png" alt="facebook" width="30" height="30"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.png" alt="instagram" width="30" height="30"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" alt="youtube" width="30" height="30"></a>
-            <a href="https://www.gmail.com/" target="_blank"><img src="../images/gmail.png" alt="correo" width="30" height="30"></a>
+    <footer class="footer">
+      <div class="container">
+        <p>Seguinos en las redes!</p>
+        <div class="footer__icons">
+          <a href="https://twitter.com/" target="_blank"
+          ><img src="../images/gorjeo.png" alt="twitter" width="30" height="30"
+        /></a>
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img
+            src="../images/facebook.png"
+            alt="facebook"
+            width="30"
+            height="30"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img
+            src="../images/instagram.png"
+            alt="instagram"
+            width="30"
+            height="30"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img src="../images/youtube.png" alt="youtube" width="30" height="30"
+        /></a>
+        <a href="https://www.gmail.com/" target="_blank"
+          ><img src="../images/gmail.png" alt="correo" width="30" height="30"
+        /></a>
         </div>
-              <hr>
-              <p class="pieDePagina5__copy">Lunhel Store 2022 © - Todos los derechos reservados.</p>
-      </footer>
+        <p class="firma">Lunhel Store 2022 © - Todos los derechos reservados.</p>
+      </div>
+</footer>
 </body>
 </html>

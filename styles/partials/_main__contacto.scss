@@ -1,0 +1,196 @@
+.main__contacto {
+    margin: 0% 12%;
+    padding: 70px 0;
+    .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .datosPersonales {
+            padding:30px;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                font-size: 2.5em;
+                padding: 20px;
+            }
+            h3{
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                font-size: 1.5em;
+            }
+            #nombre {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                padding: 10px;
+            }
+            #apellido {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                padding: 10px;
+            }
+            #documento {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                padding: 10px;
+            }
+        }
+        .otrosDatos {
+            padding:30px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            h2 {
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                font-size: 2.5em;
+                padding: 20px;
+            }
+            h3{
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                font-size: 1.5em;
+            }
+            h4{
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+                padding: 10px;
+            }
+            .select {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            #email {
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-size: 17px;
+                padding: 10px;
+            }
+        }
+        .enviar {
+            h3 {
+                color: rgb(255, 255, 255);
+                padding: 20px;
+                font-size: 1.5em;
+            }
+            .botones {
+                input {
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                    border-radius: 15px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    border-radius: map-get($sizes, borderRadiusNavbar);
+                    border-bottom: 2.5px solid map-get($colores, borderBotonNav);
+                    transition: all 0.5s ease;
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                      background-color: #0f0f0f;
+                      border-bottom: 2px solid map-get($colores, hoverBorderNav);
+                    }              
+                }
+                padding: 10px;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        margin: 0% 2%;
+        padding: 20px 0;
+        .container {
+            text-align: center;
+            .datosPersonales {
+                padding:30px;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 2em;
+                }
+                h3{
+                    color: rgb(255, 255, 255);
+                    padding: 20px;
+                    font-size: 1.5em;
+                }
+                #nombre {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    padding: 10px;
+                }
+                #apellido {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    padding: 10px;
+                }
+                #documento {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    padding: 10px;
+                }
+            }
+            .otrosDatos {
+                padding:30px;
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 2em;
+                }
+                h3{
+                    color: rgb(255, 255, 255);
+                    padding: 20px;
+                    font-size: 1.5em;
+                }
+                h4{
+                    color: rgb(255, 255, 255);
+                    font-size: 15px;
+                    padding: 10px;
+                }
+                .select {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                #email {
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    font-size: 17px;
+                    padding: 10px;
+                }
+            }
+            .enviar {
+                h3 {
+                    color: rgb(255, 255, 255);
+                    padding: 20px;
+                    font-size: 1.5em;
+                }
+                .botones {
+                    input {
+                        padding: 15px;
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        border-radius: 15px;
+                        font-size: 16px;
+                    }
+                    padding: 20px;
+                }
+            }
+            .mapa {
+                align-items: center;
+            }
+        }
+    }
+}

@@ -24,7 +24,6 @@
             background-color: rgb(56, 55, 55);
             border-radius: map-get($sizes, borderRadiusNavbar);
             border-bottom: 2.5px solid map-get($colores, borderBotonNav);
-  
             transition: all 0.5s ease;
             &:hover {
               background-color: #0f0f0f;
