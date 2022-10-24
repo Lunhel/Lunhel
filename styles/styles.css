@@ -11,7 +11,7 @@
 }
 .home__team .container .marca img {
   border-radius: 15px;
-  width: 100%;
+  max-width: 700px;
 }
 
 .main__productos .card__section h2, .main .container h1 {
