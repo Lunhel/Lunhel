@@ -39,7 +39,7 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(https://www.rhaegon.com.ar//wp-content/uploads/2022/10/aKhMhFy.png);
+  background-image: url(/images/aKhMhFy.jpg);
 }
 
 /* @mixin info($backColor, $border, $colorText, $backHover) {
@@ -758,10 +758,10 @@ body {
   .main__nosotros .main__container h2 {
     text-transform: uppercase;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
     border-radius: 15px;
     width: auto;
-    color: rgb(255, 253, 253);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 2.5em;
   }
